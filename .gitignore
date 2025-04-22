@@ -76,5 +76,5 @@ var/
 wheels/
 *.egg-info/
 .installed.cfg
-*.egg *.csv
+*.egg
 *.csv
