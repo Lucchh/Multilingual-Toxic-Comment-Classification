@@ -2,39 +2,39 @@
 
 ## Dataset
 
-The project uses two large CSV files that are not included in this repository due to their size:
+The project uses several CSV files that need to be downloaded from Kaggle:
 
-1. `milestone3_df.csv` (295.46 MB)
-2. `jigsaw-toxic-comment-train-processed-seqlen128.csv` (387.87 MB)
+1. `sample_submission.csv.zip`
+2. `test.csv.zip`
+3. `test_labels.csv.zip`
+4. `train.csv.zip`
+
+project-root/
+├── data/
+│   ├── train.csv
+│   ├── test.csv
+│   ├── test_labels.csv
+│   └── sample_submission.csv
+├── milestone4.ipynb
+└── requirements.txt
+
 
 ### How to Obtain the Dataset
 
 1. Download the files from the original source:
-   - [Jigsaw Multilingual Toxic Comment Classification Dataset](https://www.kaggle.com/c/jigsaw-multilingual-toxic-comment-classification/data)
+   - [Jigsaw Toxic Comment Classification Challenge](https://www.kaggle.com/competitions/jigsaw-toxic-comment-classification-challenge/data)
 
-2. Place the downloaded files in the root directory of this project.
+2. Create a folder called `data` in the root directory of this project.
 
-### Data Processing
+3. Extract and place the downloaded files into the `data` folder.
 
-The dataset has been preprocessed and saved in the following files:
-- `milestone3_df.csv`: Contains processed data from milestone 3
-- `jigsaw-toxic-comment-train-processed-seqlen128.csv`: Contains the processed training data with sequence length of 128
-
-## Setup
-
-1. Create a virtual environment:
+4. Create a virtual environment:
 ```bash
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+source venv/bin/activate  
 ```
 
-2. Install dependencies:
+5. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
-
-## Project Structure
-
-- `milestone4.ipynb`: Contains the main analysis and model development
-- `milestone5.ipynb`: Contains the final model implementation and results
-- `requirements.txt`: Lists all Python dependencies 
