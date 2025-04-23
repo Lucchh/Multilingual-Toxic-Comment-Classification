@@ -9,14 +9,7 @@ The project uses several CSV files that need to be downloaded from Kaggle:
 3. `test_labels.csv.zip`
 4. `train.csv.zip`
 
-project-root/
-├── data/
-│   ├── train.csv
-│   ├── test.csv
-│   ├── test_labels.csv
-│   └── sample_submission.csv
-├── milestone4.ipynb
-└── requirements.txt
+
 
 
 ### How to Obtain the Dataset
